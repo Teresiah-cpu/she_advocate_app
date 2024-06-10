@@ -21,7 +21,7 @@ class LandingPage extends StatelessWidget {
                   top: 70,
                   bottom: 20,
                 ),
-                child: Image.asset('images/girl2.png'),
+                child: Image.asset('images/girl3.png'),
               ),
 
               // Main title

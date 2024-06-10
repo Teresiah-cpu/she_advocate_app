@@ -72,8 +72,22 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 25),
-                MyButton(
-                  onTap: () => signUserIn(context),
+                ElevatedButton(
+                  onPressed: () => signUserIn(context),
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xFF6A1B9A), // Purple color
+                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  child: Text(
+                    'Sign In',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 50),
                 Row(

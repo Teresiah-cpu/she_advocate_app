@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
     //  Validate username and password, then navigate to the homepage
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => MyHomePage()), // takes you homepage
+      MaterialPageRoute(builder: (context) => MyHomePage()), // takes you to homepage
     );
   }
 
@@ -36,6 +36,7 @@ class LoginPage extends StatelessWidget {
                 const Icon(
                   Icons.lock,
                   size: 100,
+                  color: Color(0xFF6A1B9A), // Purple color
                 ),
                 const SizedBox(height: 50),
                 Text(
@@ -79,12 +80,12 @@ class LoginPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/images/google.png', //  Google image path
+                      'assets/images/google.png', // Google image path
                       height: 40,
                     ),
                     SizedBox(width: 25),
                     Image.asset(
-                      'assets/images/apple.png', //  Apple image path
+                      'assets/images/apple.png', // Apple image path
                       height: 40,
                     ),
                   ],
@@ -97,7 +98,10 @@ class LoginPage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => SignUpPage()), // signup page
                     );
                   },
-                  child: Text('Not a member? Register now'),
+                  child: Text(
+                    'Not a member? Register now',
+                    style: TextStyle(color: Color(0xFF6A1B9A)), // Purple color
+                  ),
                 ),
               ],
             ),

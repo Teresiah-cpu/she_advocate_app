@@ -21,10 +21,10 @@ class LandingPage extends StatelessWidget {
                   top: 70,
                   bottom: 20,
                 ),
-                child: Image.asset('images/girl.jpg'),
+                child: Image.asset('images/girl2.png'),
               ),
 
-              // main title
+              // Main title
               Padding(
                 padding: const EdgeInsets.all(28.0),
                 child: Text(
@@ -33,11 +33,12 @@ class LandingPage extends StatelessWidget {
                   style: GoogleFonts.notoSerif(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
+                    color: Color(0xFF6A1B9A), // Purple color
                   ),
                 ),
               ),
 
-              // sub-title
+              // Sub-title
               Text(
                 'Empower her',
                 textAlign: TextAlign.center,
@@ -51,7 +52,7 @@ class LandingPage extends StatelessWidget {
 
               const SizedBox(height: 50), // space before the button
 
-              // get started button
+              // Get started button
               GestureDetector(
                 onTap: () => Navigator.push(
                   context,
@@ -65,13 +66,13 @@ class LandingPage extends StatelessWidget {
                   padding: const EdgeInsets.all(24),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
-                    color: Color.fromARGB(255, 71, 49, 179),
+                    color: Color(0xFF6A1B9A), // Purple color
                   ),
                   child: const Text(
                     "Get Started",
                     style: TextStyle(
                       color: Colors.white,
-                      // fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
                   ),

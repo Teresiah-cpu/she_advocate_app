@@ -28,7 +28,7 @@ class LandingPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(28.0),
                 child: Text(
-                  'We Empower Women',
+                  'SHE ADVOCATE',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.notoSerif(
                     fontSize: 36,
@@ -40,7 +40,7 @@ class LandingPage extends StatelessWidget {
 
               // Sub-title
               Text(
-                'Empower her',
+                'Together We Empower her',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
